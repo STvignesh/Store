@@ -1,6 +1,7 @@
 class Book < ApplicationRecord
   validates :title, presence: true
   after_create :sell
+  belongs_to :author
 
 
   private
